@@ -30,7 +30,7 @@ I have also added comments and markdown cells to make it easier to navigate and 
 
 ## Results<a name="results"></a>
 
-The main findings of the code can be found at the post available [here](https://medium.com/@josh_2774/how-do-you-become-a-developer-5ef1c1c68711).
+The main findings of the code can be found in the "Blog - House Sales Analysis.md" attached to this repo.
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
