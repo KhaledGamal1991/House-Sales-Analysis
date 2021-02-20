@@ -29,7 +29,7 @@ I have also added comments and markdown cells to make it easier to navigate and 
 
 ## Results<a name="results"></a>
 
-The main findings of the code can be found in the "Blog - House Sales Analysis.md" [here](https://github.com/telayat/House-Sales-Analysis/blob/main/Blog-HouseSalesAnalysis.md) attached to this repo.
+The main findings of the code can be found in the "Blog-HouseSalesAnalysis.md" [here](https://github.com/telayat/House-Sales-Analysis/blob/main/Blog-HouseSalesAnalysis.md) attached to this repo.
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
