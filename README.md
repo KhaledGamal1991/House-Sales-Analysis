@@ -1,5 +1,4 @@
-# House-Prices-Prediction
-House Prices Prediction
+# House-Sales-Analysis
 
 ### Table of Contents
 
