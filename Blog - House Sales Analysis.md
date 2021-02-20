@@ -81,71 +81,71 @@ Most of the assets are 1Fam "Single-family"
 the average price for "TwnhsI", "Duplx", "2FmCon" almsot have the same average price with low count
 This might not be a good feature to represent the sales price
 
-![figure_7](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_3.png)
+![figure_7](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_3.PNG)
 
 3rd feature, MSZoning which identifies the general zoning classification of the sale.
 FV "Floating Village Residential" is the most repeated with highest average price
 Although most of the assets are FV, the average price vary from zone to another
 Might be a good feature to consider
 
-![figure_8](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_4.png)
+![figure_8](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_4.PNG)
 
 4th feature, Neighborhood: Physical locations within Ames city limits
 We can notice that the average price vary by neighborhood
 Might be a good feature that affects the sale price
 
-![figure_9](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_5.png)
+![figure_9](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_5.PNG)
 
 5th feature, Utilities: Type of utilities available
 All the assets except one has all utilities, so I'll drop this feature
 
-![figure_10](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_6.png)
+![figure_10](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_6.PNG)
 
 6th and 7th features, OverallQual and OverallCond
 From the below we notice that OverallQual has strong relation with the price more than OverallCond
 I'll consider OverallQual as a feature and drop OverallCond
 
-![figure_11](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_7.png)
+![figure_11](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_7.PNG)
 
-![figure_12](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_8.png)
+![figure_12](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_8.PNG)
 
 8th feature, HeatingQC: Heating quality and condition
 Average price vary per HeatingQC (Heating quality and condition)
 I'll consider this feature
 
-![figure_13](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_9.png)
+![figure_13](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_9.PNG)
 
 9th feature, CentralAir: Central air conditioning
 Most of the assets have central AC, but the average price of Non-centraized AC assets is almot the half of assets with central AC
 I'll consider this feature
 
-![figure_14](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_10.png)
+![figure_14](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_10.PNG)
 
 10th feature, SaleType: Type of sale
 Most of the assets sale type is "Warranty Deed - Conventional", but the average price vary alot between types
 I'll consider this feature
 
-![figure_15](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_11.png)
+![figure_15](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_11.PNG)
 
 11th feature, YearBuilt: Original construction date
 We can see that the prices of new houses are higher in general than old houses
 I'll consider this feature
 
-![figure_16](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_12.png)
+![figure_16](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_12.PNG)
 
 12th feature, GrLivArea: Above grade (ground) living area square feet
 GrLivArea has almost liner relation with the sale price with few exceptions
 I will consider this feature
 I might just remove the outliers (very huge area more than 4000 and lower saleprice than 200000)
 
-![figure_17](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_13.png)
+![figure_17](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_13.PNG)
 
 13th feature, GarageArea: Size of garage in square feet
 GarageArea has almost liner relation with the sale price with some exceptions
 Some assets have no garage, and in this case the sales price also vary (of course due to other factors)
 I will consider this feature
 
-![figure_18](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_14.png)
+![figure_18](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_14.PNG)
 
 Now let's see if we missed any features that might be correlated to the sale price.
 From the below correlation matrix with numerical features we can find that the sale price is correlated with:
@@ -154,11 +154,11 @@ From the below correlation matrix with numerical features we can find that the s
 - YearRemodAdd (We might have missed this one, let's consider it)
 - GarageArea and GarageCars (I have selected GarageArea to represent this factor)
 
-![figure_19](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_15.png)
+![figure_19](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_15.PNG)
 
 let's have a look at the YearRemodAdd which indicates remodel date (same as construction date if no remodeling or additions)
 
-![figure_20](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_16.png)
+![figure_20](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_16.PNG)
 
 ### Sale Price Modeling <a name="Modeling"></a>
 
@@ -166,7 +166,7 @@ Now let go to Sale Price Modeling using the selected features which are ['MSZoni
 
 Here I have tried two different models (Linear Regression and XGBoost Regressor) and below the two models scores
 
-![figure_21](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_17.png)
+![figure_21](https://github.com/telayat/House-Sales-Analysis/blob/main/Pics/Q3_17.PNG)
 
 XGBoost is overfitting with minor difference over the linear regression, so I'll go for the linear regression model for Sale Price modeling.
 
